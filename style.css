@@ -1,0 +1,26 @@
+/* body {
+   
+    background-color: #454545;
+} */
+
+body::before {
+    content: ""; /* Required for the pseudo-element to work */
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://img.freepik.com/free-vector/floating-laughing-emoji-characters_52683-27761.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2; /* 50% opacity */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.container {
+   
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+}
+
